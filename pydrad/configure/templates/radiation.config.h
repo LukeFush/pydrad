@@ -22,6 +22,7 @@
 #define RADIATION_LOOKUP_TABLE "{{ radiation.lookup_table }}"
 {%- endif %}
 {% endif %}
+{% if radiation.time_variable_abundances -%}#define TIME_VARIABLE_ABUNDANCES{%- endif %}
 {% if radiation.density_dependent_rates -%}#define DENSITY_DEPENDENT_RATES{%- endif %}
 {% if radiation.optically_thick_radiation -%}
 #define OPTICALLY_THICK_RADIATION
