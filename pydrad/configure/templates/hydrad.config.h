@@ -14,6 +14,7 @@
 {% if general.write_file_hydrogen_level_populations %}#define WRITE_FILE_HSTATE{% endif %}
 {% if general.write_file_timescales %}#define WRITE_FILE_SCALES{% endif %}
 {% if general.write_file_equation_terms %}#define WRITE_FILE_TERMS{% endif %}
+{% if general.write_file_abundance_factor %}#define WRITE_FILE_ABUNDANCE_FACTOR{% endif %}
 #define OUTPUT_EVERY_N_TIME_STEPS {{ general.logging_frequency | is_required }}
 // **** End of Output ****
 
